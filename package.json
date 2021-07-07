@@ -1,12 +1,12 @@
 {
   "name": "mongo-assign",
   "version": "1.0.0",
-  "description": "",
+  "description": "all about mongoDB",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "azim",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
@@ -14,6 +14,15 @@
     "express": "^4.17.1",
     "mocha": "^3.2.0",
     "mocha-junit-reporter": "^2.0.0",
-    "mongoose": "^5.12.14"
-  }
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azim-js/mongoDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Azim-js/mongoDB/issues"
+  },
+  "homepage": "https://github.com/Azim-js/mongoDB#readme"
 }
