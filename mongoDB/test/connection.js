@@ -3,11 +3,23 @@
 const mongoose=require('mongoose');
 // connection
 
-mongoose.connect("mongodb://localhost/testdb");
+// using ES6 as promises
+mongoose.Promise=global.Promise;
 
-// testing connection by events .once('open')
+// data connection before the testing
 
-mongoose.connection.once('open',function(){
+before(function(done){
+    mongoose.connect("mongodb://localhost/testdb");
+    // testing connection by events .once('open')
+
+    mongoose.connection.once('open',function(){
     console.log("connection successfull !!!!");
+    done();
 }).on('error',function(){console.log("connection error !!!")});
+   
+})
+
+
+
+
 
