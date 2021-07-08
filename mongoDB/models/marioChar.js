@@ -13,7 +13,7 @@ const marioCharSchema=new Schema({
 
 // creating model mongoose.model('collection',schema)
 
-const marioChar=mongoose.model('mariochar',mariocharSchema);
+const marioChar=mongoose.model('mariochar',marioCharSchema);
 
 // to use it as new marioChar
 module.exports=marioChar;
