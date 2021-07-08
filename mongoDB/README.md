@@ -7,3 +7,13 @@ npm install mongoose --save
 
 "C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="c:\data\db"
 - run in dir data/db folder and then make connection 
+
+using mocha 
+
+npm install mocha --save
+
+and package.json
+
+specify
+
+->test:"mocha"
