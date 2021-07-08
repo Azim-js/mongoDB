@@ -14,7 +14,8 @@ describe("to save the data (create new records) ",function(done){
     // creating test1
     it('will save the data',function(){
         const char=new marioChar({
-            name:"lugi"
+            name:"lugi",
+            weight:20
         });
         // async with promises to pending and resolved state
         char.save().then(function(){
