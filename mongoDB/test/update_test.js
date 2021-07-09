@@ -23,4 +23,13 @@ describe("for updating the record ",function(){
             })
         })
     })
+
+    it("incremeant the weight by 1",function(done){
+        marioChar.update({$inc:{weight:1}}).then(function(){
+            marioChar.findOne({name:'Azim'}).then(function(result){
+                assert(result.weight===67);
+                done();
+            })
+        })
+    })
 })
