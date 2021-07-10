@@ -15,7 +15,7 @@ const BooksSchema= new Schema({
 
 const AuthorsSchema=new Schema({
     name:String,
-    Books:[BooksSchema]
+    books:[BooksSchema]
 })
 
 // creation of models
@@ -23,4 +23,4 @@ const AuthorsSchema=new Schema({
 const Author=mongoose.model('author',AuthorsSchema);
 
 console.log("hello")
-exports.module=Author;
+module.exports=Author;
